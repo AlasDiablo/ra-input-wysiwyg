@@ -1,0 +1,62 @@
+{
+    "name": "ra-input-wysiwyg",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        "react admin",
+        "react",
+        "wysiwyg",
+        "rich text"
+    ],
+    "author": "AlasDiablo",
+    "scripts": {
+        "build": "npm run build-cjs && npm run build-esm",
+        "build-cjs": "rimraf ./dist/cjs && tsc --outDir dist/cjs",
+        "build-esm": "rimraf ./dist/esm && tsc --outDir dist/esm --module es2015"
+    },
+    "license": "CECILL-C",
+    "files": [
+        "*.md",
+        "dist",
+        "src"
+    ],
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/cjs/index.d.ts",
+    "dependencies": {
+        "draftjs-to-html": "^0.9.1",
+        "html-to-draftjs": "^1.5.0",
+        "react-draft-wysiwyg": "^1.15.0"
+    },
+    "peerDependencies": {
+        "@mui/icons-material": "^5.0.1",
+        "@mui/material": "^5.0.2",
+        "ra-core": "^4.0.0",
+        "ra-ui-materialui": "^4.0.0",
+        "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
+        "react-dom": "^16.9.0 || ^17.0.0 || ^18.0.0"
+    },
+    "devDependencies": {
+        "@draconides/eslint-config-react": "^1.0.2",
+        "@draconides/eslint-config-ts": "^1.0.2",
+        "@types/draftjs-to-html": "^0.8.1",
+        "@types/html-to-draftjs": "^1.4.0",
+        "@types/node": "^20.3.3",
+        "@types/react": "^18.2.14",
+        "@types/react-dom": "^18.2.6",
+        "@types/react-draft-wysiwyg": "^1.13.4",
+        "eslint": "^8.44.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-prettier": "^4.2.1",
+        "prettier": "^2.8.8",
+        "ra-core": "^4.11.4",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "rimraf": "^5.0.1",
+        "stylelint": "^15.9.0",
+        "stylelint-config-standard-scss": "^10.0.0",
+        "stylelint-config-twbs-bootstrap": "^11.0.0",
+        "typescript": "^5.1.6"
+    }
+}

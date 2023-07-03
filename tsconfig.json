@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "commonjs",
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "allowJs": true,
+        "jsx": "react",
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "outDir": "lib",
+        "rootDir": "src",
+    },
+    "include": [
+        "src"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "tsconfig.eslint.json",
+        "sourceType": "module"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "plugins": [
+        "@typescript-eslint/eslint-plugin",
+        "eslint-plugin-import"
+    ],
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "@draconides/eslint-config-ts",
+        "@draconides/eslint-config-react"
+    ],
+    "root": true,
+    "env": {
+        "node": true,
+        "jest": true,
+        "browser": true
+    },
+    "rules": {
+        "no-console": "warn",
+        "@typescript-eslint/no-explicit-any": "off",
+        "react/jsx-closing-tag-location": "off"
+    },
+    "ignorePatterns": [
+        "dist"
+    ]
+}
